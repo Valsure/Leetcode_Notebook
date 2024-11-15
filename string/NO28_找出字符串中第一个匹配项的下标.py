@@ -23,10 +23,23 @@ haystack = "leetcode", needle = "leeto"
 
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
-        idx = haystack.find(needle)
-        return idx
+        if len(haystack) < len(needle):
+            return -1
+        for i in range(len(haystack)):
+            k = i
+            for j in range(len(needle)):
+                if(k>len(haystack)-1):
+                    return -1
+                if haystack[k] != needle[j]:
+                    break
+                k += 1
+
+            if k-i == len(needle):
+                return i
+        return -1
+
 
 
 if __name__ == '__main__':
     s = Solution()
-    print(s.strStr("sadbutsad", "sad"))
+    print(s.strStr("mississippi", "issipi"))
