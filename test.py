@@ -1,5 +1,2 @@
-s = "abcdefg"
-s = list(s)
-del s[0]
-print(s)
-
+for i in range(4):
+    print(i)
