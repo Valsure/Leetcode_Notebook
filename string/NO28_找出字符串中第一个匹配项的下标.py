@@ -26,6 +26,7 @@ class Solution:
         idx = haystack.find(needle)
         return idx
 
+
 if __name__ == '__main__':
     s = Solution()
     print(s.strStr("sadbutsad", "sad"))
