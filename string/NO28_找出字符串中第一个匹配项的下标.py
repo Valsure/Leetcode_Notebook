@@ -39,6 +39,8 @@ class Solution:
         return -1
 
 class Solution1:
+    def strStr(self, haystack, needle):
+        
     
 
 
