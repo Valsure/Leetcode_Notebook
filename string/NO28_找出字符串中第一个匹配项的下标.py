@@ -38,6 +38,8 @@ class Solution:
                 return i
         return -1
 
+class Solution1:
+    
 
 
 if __name__ == '__main__':
